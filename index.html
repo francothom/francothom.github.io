@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventFlow - Organiza Eventos Memorables, Sin Caos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+            color: #1f2937; /* text-gray-800 */
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        /* Animaciones de entrada */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">Event<span class="text-indigo-600">Flow</span></h1>
+            <nav class="hidden md:flex items-center space-x-8 text-gray-600">
+                <a href="#features" class="hover:text-indigo-600 transition-colors">Características</a>
+                <a href="#testimonial" class="hover:text-indigo-600 transition-colors">Testimonios</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">Contacto</a>
+            </nav>
+            <a href="#contact" class="cta-button bg-indigo-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-indigo-700">
+                Solicitar Demo
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 text-center relative overflow-hidden">
+            <div class="container mx-auto px-6 reveal">
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter leading-tight max-w-4xl mx-auto text-gray-900">
+                    Organiza Eventos Memorables,
+                    <span class="text-indigo-600">Sin el Caos</span>
+                </h2>
+                <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-gray-600">
+                    Deja de hacer malabares entre Excel, WhatsApp y correos. Centraliza tareas, proveedores e invitados con el poder de la IA en una sola plataforma.
+                </p>
+                <div class="mt-10 flex justify-center items-center gap-4">
+                    <a href="#contact" class="cta-button bg-indigo-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-indigo-700">
+                        Pide tu Demo Gratuita
+                    </a>
+                </div>
+                <div class="mt-16 max-w-4xl mx-auto bg-white rounded-xl p-2 shadow-2xl">
+                     <img src="https://placehold.co/1200x600/ffffff/4f46e5?text=Vista+del+Dashboard+de+EventFlow" alt="Dashboard de la plataforma de gestión de eventos" class="rounded-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pain Points Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto reveal">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tighter text-gray-900">La organización de eventos es un arte, no una batalla</h3>
+                    <p class="mt-4 text-gray-600">Sabemos que tu día a día es una carrera contra el reloj. Por eso creamos una solución que entiende tus desafíos.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl reveal transition hover:shadow-lg hover:-translate-y-1">
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mt-6 text-gray-900">Fragmentación de Herramientas</h4>
+                        <p class="mt-2 text-gray-600">Pasas de hojas de cálculo a chats y emails, perdiendo información y tiempo valioso en el proceso.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl reveal transition hover:shadow-lg hover:-translate-y-1" style="transition-delay: 200ms;">
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mt-6 text-gray-900">Estrés y Carga Mental</h4>
+                        <p class="mt-2 text-gray-600">La preocupación constante por olvidar un detalle o que algo salga mal te impide disfrutar de tu propio éxito.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl reveal transition hover:shadow-lg hover:-translate-y-1" style="transition-delay: 400ms;">
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mt-6 text-gray-900">Falta de Visibilidad y Control</h4>
+                        <p class="mt-2 text-gray-600">Sin una visión centralizada, es imposible saber el estado real del evento y anticipar problemas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto reveal">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tighter text-gray-900">Tu centro de mando inteligente para eventos</h3>
+                    <p class="mt-4 text-gray-600">Hemos construido las herramientas que siempre quisiste, todas en un solo lugar.</p>
+                </div>
+
+                <!-- Feature 1: AI Assistant -->
+                <div class="mt-20 grid md:grid-cols-2 gap-12 items-center">
+                    <div class="reveal">
+                        <div class="bg-indigo-100 text-indigo-600 inline-flex p-3 rounded-xl">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.5 8.5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2zM10 12a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2zM8 5.5a.5.5 0 00-.5.5v2a.5.5 0 00.5.5h2a.5.5 0 00.5-.5v-2a.5.5 0 00-.5-.5h-2zM12.5 8.5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <h4 class="text-2xl md:text-3xl font-bold mt-4 text-gray-900">Tu Copiloto con IA</h4>
+                        <p class="mt-4 text-gray-600">Nuestro asistente inteligente no solo responde preguntas, sino que se anticipa. Detecta conflictos de agenda, sugiere optimizaciones de presupuesto y aprende de tus eventos para darte recomendaciones cada vez más precisas.</p>
+                    </div>
+                    <div class="reveal">
+                        <div class="bg-white rounded-xl p-2 shadow-lg">
+                            <img src="https://placehold.co/600x450/ffffff/4f46e5?text=Asistente+de+IA+Proactivo" alt="Imagen del asistente de IA" class="rounded-lg w-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Unified Dashboard -->
+                <div class="mt-20 grid md:grid-cols-2 gap-12 items-center">
+                    <div class="reveal md:order-2">
+                        <div class="bg-indigo-100 text-indigo-600 inline-flex p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 2v2h12V6H4zm0 4v2h12v-2H4zm0 4v2h12v-2H4z" /></svg>
+                        </div>
+                        <h4 class="text-2xl md:text-3xl font-bold mt-4 text-gray-900">Dashboard Unificado con Drag & Drop</h4>
+                        <p class="mt-4 text-gray-600">Visualiza cada etapa de tu evento en un panel Kanban intuitivo. Arrastra tareas, asigna responsables y cambia estados con una facilidad que te sorprenderá. Todo tu evento, en una sola pantalla.</p>
+                    </div>
+                    <div class="reveal md:order-1">
+                         <div class="bg-white rounded-xl p-2 shadow-lg">
+                            <img src="https://placehold.co/600x450/ffffff/4f46e5?text=Dashboard+Kanban+Intuitivo" alt="Imagen del dashboard unificado" class="rounded-lg w-full">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3: Guest Management -->
+                 <div class="mt-20 grid md:grid-cols-2 gap-12 items-center">
+                    <div class="reveal">
+                        <div class="bg-indigo-100 text-indigo-600 inline-flex p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" /></svg>
+                        </div>
+                        <h4 class="text-2xl md:text-3xl font-bold mt-4 text-gray-900">Gestión Integral de Invitados</h4>
+                        <p class="mt-4 text-gray-600">Desde el envío de invitaciones personalizadas hasta el check-in el día del evento con códigos QR. Gestiona confirmaciones, dietas especiales y comunicaciones segmentadas de forma automática.</p>
+                    </div>
+                    <div class="reveal">
+                         <div class="bg-white rounded-xl p-2 shadow-lg">
+                            <img src="https://placehold.co/600x450/ffffff/4f46e5?text=Gestión+de+Invitados+y+Check-in+QR" alt="Imagen de la gestión de invitados" class="rounded-lg w-full">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonial" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 reveal">
+                <div class="bg-white rounded-xl p-8 md:p-12 max-w-4xl mx-auto text-center shadow-lg">
+                    <img src="https://placehold.co/100x100/e0e7ff/4338ca?text=GC" alt="Foto de Gabriela Cabrera" class="w-24 h-24 rounded-full mx-auto border-4 border-indigo-200">
+                    <blockquote class="mt-8 text-xl md:text-2xl font-medium text-gray-800">
+                        “Anoto todo, todo, todo... me mando mensajes a mí misma. Me pongo muy nerviosa... ¿Qué pasa si me pasa algo? La clave es pensar y volver a pensar.”
+                    </blockquote>
+                    <cite class="mt-6 block font-semibold text-indigo-600">
+                        Gabriela Cabrera Castroman
+                        <span class="mt-1 block text-sm text-gray-500 font-normal">Responsable de Contenidos y Actividades Académicas</span>
+                    </cite>
+                     <p class="mt-6 text-gray-700 max-w-2xl mx-auto">EventFlow nació para responder a estas preguntas. Para ser ese segundo cerebro que nunca olvida y que permite que cualquier miembro del equipo pueda tomar el control con todo el contexto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center reveal">
+                <h3 class="text-3xl md:text-5xl font-black tracking-tighter max-w-3xl mx-auto text-gray-900">Deja de apagar incendios. Empieza a crear experiencias.</h3>
+                <p class="mt-4 text-lg text-gray-600 max-w-xl mx-auto">Descubre cómo puedes reducir hasta un 70% tu tiempo administrativo y llegar al día del evento con total confianza.</p>
+                <div class="mt-8">
+                     <a href="#" class="cta-button bg-indigo-600 text-white font-bold px-8 py-4 rounded-lg text-lg inline-block hover:bg-indigo-700">
+                        Solicita tu Demo Gratuita Ahora
+                    </a>
+                    <p class="mt-3 text-sm text-gray-500">Sin compromiso. Sin tarjeta de crédito requerida.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-12">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 EventFlow. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Creado con ❤️ por Aramis Cicheski, Franco Thomasset y Felipe Osano.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para animaciones de revelación al hacer scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
